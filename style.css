@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: sans-serif;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: url("images/BACKGROUND.jpg") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  border: 2px solid #ccc;
+}
+
+.character {
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  left: 50px;
+}
+
+.obstacle {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  right: -50px;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: lightsalmon;
+}
+#pauseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Smooth transition */
+}
+#gameText {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(255, 115, 0);
+  text-shadow: 1px 1px 2px black;
+  z-index: 10;
+}
+#pauseBtn:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Grows slightly */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+#startBtn {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#startBtn:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+.game-over {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Comic Sans MS", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  color: yellow;
+  text-shadow: 2px 2px black;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+.restart-button {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive;
+  font-weight: bold;
+  color: white;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.restart-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
